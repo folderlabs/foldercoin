@@ -37,7 +37,7 @@ module.exports = {
       provider: providerFactory4Ethereum,
       network_id: 3,
       gas: 6000000,
-      gasPrice: 50000000000, // 50 Gwei
+      gasPrice: 100000000000, // 50 Gwei
     },
   },
   compilers: {
