@@ -35,4 +35,4 @@ Smart-contracts for folder coin platform
 ## folder coin token address
 
 > rospten : 
-> mainnet : 
+> mainnet :  https://etherscan.io/token/0xA8580F3363684d76055bdC6660CaeFe8709744e1
