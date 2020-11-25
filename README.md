@@ -1,3 +1,16 @@
+# Update issue
+
+## 2020-11-20
+
+```
+solidity version : ^0.6.0;
+openzeppelin-contracts code version changed
+     https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v3.3/contracts/token/ERC20
+caution : It can only be built on remix.ethereum.org.
+     use FolderCoinToken.sol
+```
+
+
 # folder-coin-contracts
 
 nvm use v9.5.0
