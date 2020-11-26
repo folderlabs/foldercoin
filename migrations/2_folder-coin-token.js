@@ -1,6 +1,6 @@
 const FolderCoinToken = artifacts.require("./FolderCoinToken.sol");
-const FolderCoinCrowdsale = artifacts.require("./FolderCoinCrowdsale.sol");
-const FolderCoinAirdrop = artifacts.require("./FolderCoinAirdrop.sol");
+//const FolderCoinCrowdsale = artifacts.require("./FolderCoinCrowdsale.sol");
+//const FolderCoinAirdrop = artifacts.require("./FolderCoinAirdrop.sol");
 
 const name = "Folder Coin";
 const symbol = "FOL";
@@ -68,21 +68,21 @@ const TokenContractDeployer = (deployer, network) => {
 // const FOLDER_COIN_CROWDSALE_ADDRESS = '0xe9b029a9e771a7878c7983e1d06f5895db0eb24c';
 
 // Deployer
-const SaleContractDeployer = (deployer, network) => {
-  deployer
-    .deploy(
-      FolderCoinCrowdsale,
-      rate,
-      wallet,
-      getTokenAddress(network),
-      totalSaleCap
-    )
-    .then((_) =>
-      console.log(
-        `FOLDER_COIN Crowdsale contract has been deployed successfully on ${network}.`
-      )
-    );
-};
+// const SaleContractDeployer = (deployer, network) => {
+//   deployer
+//     .deploy(
+//       FolderCoinCrowdsale,
+//       rate,
+//       wallet,
+//       getTokenAddress(network),
+//       totalSaleCap
+//     )
+//     .then((_) =>
+//       console.log(
+//         `FOLDER_COIN Crowdsale contract has been deployed successfully on ${network}.`
+//       )
+//     );
+// };
 
 function getTokenAddress(network) {
   switch (network) {
@@ -105,15 +105,15 @@ function getTokenAddress(network) {
 // const FOLDER_COIN_AIRDROP_ADDRESS = '0x84b148d389a94bf97abba8bf04bc4b0f33355418';
 
 // Deployer
-const AirdropContractDeployer = (deployer, network) => {
-  deployer
-    .deploy(FolderCoinAirdrop, getTokenAddress(network))
-    .then((_) =>
-      console.log(
-        `FOLDER_COIN Airdrop contract has been deployed successfully on ${network}.`
-      )
-    );
-};
+// const AirdropContractDeployer = (deployer, network) => {
+//   deployer
+//     .deploy(FolderCoinAirdrop, getTokenAddress(network))
+//     .then((_) =>
+//       console.log(
+//         `FOLDER_COIN Airdrop contract has been deployed successfully on ${network}.`
+//       )
+//     );
+// };
 
 /*****************************************************************/
 
